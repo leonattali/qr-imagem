@@ -1,17 +1,13 @@
 function gerarQR() {
-  const texto = document.getElementById("text").value;
-  const qrDiv = document.getElementById("qrcode");
 
-  qrDiv.innerHTML = ""; // limpa QR anterior
+const qrDiv = document.getElementById("qrcode");
 
-  if (!texto) {
-    alert("Digite algo!");
-    return;
-  }
+qrDiv.innerHTML = "";
 
-  new QRCode(qrDiv, {
-    text: texto,
-    width: 200,
-    height: 200,
-  });
+new QRCode(qrDiv, {
+text: "https://leonattali.github.io/qr-imagem",
+width: 200,
+height: 200
+});
+
 }
