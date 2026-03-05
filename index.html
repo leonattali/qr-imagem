@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code</title>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body style="display:flex; justify-content:center; align-items:center; height:100vh;">
+
+  <div id="qrcode"></div>
+
+  <script>
+    const url = "https://github.com/leonattali/qr-imagem.git";
+
+    new QRCode(document.getElementById("qrcode"), {
+      text: url,
+      width: 250,
+      height: 250
+    });
+  </script>
+
+</body>
+</html>
